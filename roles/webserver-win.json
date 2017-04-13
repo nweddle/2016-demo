@@ -1,0 +1,14 @@
+{
+  "name": "webserver-win",
+  "description": "Sets up IIS on Windows based servers",
+  "default_attributes": {
+    "fourthcoffee": {
+      "install_path": "C:\\inetpub\\FourthCoffee",
+      "install_method": "_dsc"
+    }
+  },
+  "run_list": [
+    "role[chef-client]",
+    "recipe[fourthcoffee]"
+  ]
+}

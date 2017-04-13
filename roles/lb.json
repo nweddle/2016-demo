@@ -1,0 +1,16 @@
+{
+  "name": "lb",
+  "description": "Sets up HAProxy to balance between servers",
+  "default_attributes": {
+    "fwrules": {
+      "22002": true
+    },
+    "lb": {
+      "app_server_role": "webserver-win"
+    }
+  },
+  "run_list": [
+    "role[chef-client]",
+    "recipe[lb]"
+  ]
+}
