@@ -24,9 +24,9 @@ sc.exe config winrm start=auto
 net start winrm
 
 # Add the chef server's hostname to hosts file
-$chefserverip = "CHEF_SERVER_IP"
+$chefserverip = "172.31.54.10"
 $chefserverhostname = "chef.automate-demo.com"
-$automateserverip = "AUTOMATE_SERVER_IP"
+$automateserverip = "172.31.54.11"
 $automateserverhostname = "automate.automate-demo.com"
 $filename = "C:\Windows\System32\drivers\etc\hosts"
 $automateserverip + "`t`t" + $automateserverhostname | Out-File -encoding ASCII -append $filename
