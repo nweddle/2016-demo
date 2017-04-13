@@ -1,0 +1,1 @@
+knife ec2 server create --fqdn lb -g sg-de9d44a5 --subnet subnet-cef71695 -f t2.micro -S nweddle_sa --image ami-05cf2265 --associate-public-ip -N lb -r 'role[lb]' -i ~/.ssh/nweddle_sa.pem --ssh-user centos
